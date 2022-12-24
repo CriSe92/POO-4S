@@ -16,7 +16,9 @@ public class Cerchio {
 	}
 	
 	public Cerchio(Cerchio c) {
-		
+		this.raggio = c.raggio;
+		this.centro = new Punto(c.centro);
+		//this.centro = new Punto(c.centro.getX(),c.centro.getX());
 	}
 	
 	public Punto getCentro() {
