@@ -2,22 +2,30 @@ package geometria;
 
 public class Punto{
    private double x, y;
+   private static int puntiCreati = 0;
    
  //costruttore di default
    public Punto(){
       x = 0;
       y = 0;
+      puntiCreati++;
    }
    
    //costruttore normale
    public Punto( double x, double y ){
       this.x=x; this.y=y;
+      puntiCreati++;
    }
    
  //costruttore di copia
    public Punto( Punto p ){
       this.x = p.x;
       this.y = p.y;
+      puntiCreati++;
+   }
+   
+   public static int getPuntiCreati() {
+	   return puntiCreati;
    }
    
    public double getX(){ return x; }
