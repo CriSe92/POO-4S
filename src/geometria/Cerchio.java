@@ -30,11 +30,11 @@ public class Cerchio {
 	}
 	
 	public double perimetro() {
-		return 0;
+		return 2*this.raggio*Math.PI;
 	}
 	
 	public double area() {
-		return 0;
+		return this.raggio*Math.PI;
 	}
 
 }

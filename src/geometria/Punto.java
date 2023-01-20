@@ -67,6 +67,7 @@ public class Punto{
 		p1.sposta(5, 8);
 		System.out.println("p0: "+p0);
 		System.out.println("p1: "+p1);
+		System.out.println("Punti creati: "+Punto.getPuntiCreati());
    }
   //main di test
 }//Punto
